@@ -30,12 +30,17 @@ html {
 
 #section1 {
   height: 600px;
-  background-color: pink;
+  background-color: blue;
 }
 
 #section2 {
   height: 600px;
-  background-color: yellow;
+  background-color: red;
+}
+
+#section3 {
+  height: 600px;
+  background-color: purple;
 }
   
 .parallax1 {
@@ -74,8 +79,12 @@ html {
 <body>
 <div id="header">SUCK MY NUTS</div>
 
-<div style="margin-top:200px;padding:15px 15px 150px;font-size:30px">
-  <p><b>This site is going to be a way to document and track the progress I make on personal projects that I'm working on.</b></p>
+<div class="parallax1"></div>
+<div class="main" id="section1">
+  <h2>Section 1</h2>
+  <p>This site is going to be a way to document and track the progress I make on personal projects that I'm working on.</p>
+  <a href="#section2">Click Me to Smooth Scroll to Section 1 Above</a>
+  <p>Note: Fuck you.</p>
 </div>
 <script>
 // When the user scrolls down 50px from the top of the document, resize the header's font size
@@ -89,17 +98,17 @@ function scrollFunction() {
   }
 }
 </script>
-<div class="parallax1"></div>
-
-<div class="main" id="section1">
-  <h2>Section 1</h2>
-  <p>Click on the link to see the "smooth" scrolling effect.</p>
-  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
-  <p>Note: you can still suck my fat nuts.</p>
-</div>
 <div class="parallax2"></div>
+
 <div class="main" id="section2">
   <h2>Section 2</h2>
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#section3">Click Me to Smooth Scroll to Section 3 Below</a>
+  <p>Note: you can still suck my fat nuts.</p>
+</div>
+<div class="parallax3"></div>
+<div class="main" id="section3">
+  <h2>Section 3</h2>
   <p>Click on the link to see the "smooth" scrolling effect.</p>
   <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
   <p>Note: Fuck you.</p>
