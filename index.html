@@ -44,6 +44,18 @@
 <div style="margin-top:200px;padding:15px 15px 2500px;font-size:30px">
   <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
 </div>
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "90px";
+  }
+}
+</script>
 <div class="parallax"></div>
 
 <div style="height:800px;background-color:black;font-size:48px">
