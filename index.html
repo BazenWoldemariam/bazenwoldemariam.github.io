@@ -23,7 +23,21 @@
   width: 100%;
   transition: 0.2s;
 }
+  
+html {
+  scroll-behavior: smooth;
+}
 
+#section1 {
+  height: 600px;
+  background-color: pink;
+}
+
+#section2 {
+  height: 600px;
+  background-color: yellow;
+}
+  
 .parallax1 {
   /* The image used */
   background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sun-sentinel.com%2Fresizer%2FCZd-jx0DOTuzHB146kEIJdA5AZk%3D%2F630x630%2Ftop%2Fwww.trbimg.com%2Fimg-4f9ca8a1%2Fturbine%2Fredeye-chief-keef-20120428&f=1&nofb=1");
@@ -77,12 +91,18 @@ function scrollFunction() {
 </script>
 <div class="parallax1"></div>
 
-<div style="height:200px;background-color:purple;font-size:48px">
-SUCK MY FAT NUTS
+<div class="main" id="section1">
+  <h2>Section 1</h2>
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+  <p>Note: you can still suck my fat nuts.</p>
 </div>
 <div class="parallax2"></div>
-<div style="height:400px;background-color:red;font-size:68px">
-SUCK MY FAT NUTS
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+  <p>Note: Fuck you.</p>
 </div>
 </body>
 </html>
